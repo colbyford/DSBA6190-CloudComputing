@@ -37,8 +37,8 @@ Get Information for the AMLS in Azure
 """
 subscription_id = "<your_subscription_id>" #0bb59590-d012-407d-a545-7513aae8c4a7
 resource_group = "<your_resource_group>" #DSBA6190-<groupname>
-workspace_name = "<your_amls_workspace>" #your workspace name
-workspace_region = "<your_regsion>" #eastus2
+workspace_name = "<your_amls_workspace>" #dsba6190_<groupname>_ml
+workspace_region = "<your_region>" #eastus2
 
 #%%
 """
