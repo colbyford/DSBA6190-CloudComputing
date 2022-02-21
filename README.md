@@ -6,3 +6,4 @@
 
 <img align="right" src="https://github.com/colbyford/DSBA6190-CloudComputing/blob/master/img/canvas_header.png?raw=true" width="500">
 Course Materials for the DSBA 6190-U90 - Cloud Computing for Data Analysis Course (Spring 2022)
+
