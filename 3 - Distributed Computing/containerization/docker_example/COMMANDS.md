@@ -10,8 +10,12 @@ docker build -t <IMAGE_NAME> .
 ## Run Docker Image (Locally to test)
 
 ```bash
-docker run -p <IMAGE_NAME>
-# docker run -p instructor_sklearn
+docker run --name <CONTAINER_NAME> <IMAGE_NAME>
+# docker run -it --name sklearn_01 -dt instructor_sklearn /bin/bash
+# docker run -it instructor_sklearn /bin/bash
+
+docker exec -it <CONTAINER_NAME> <COMMAND>
+# docker exec -it sklearn_01 /bin/bash
 ```
 
 ## Push to Azure Container Registry
