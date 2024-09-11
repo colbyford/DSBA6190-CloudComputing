@@ -12,7 +12,7 @@ import pandas as pd
 ## Add target variable to the DataFrame
 # diabetes_df['target'] = diabetes.target
 # diabetes_df.to_csv('diabetes.csv', index=False)
-diabetes = pd.read_csv('diabetes.csv')
+diabetes = pd.read_csv('/mnt/datalake/instructor/diabetes.csv')
 
 ## Split the data
 # X, y = diabetes.data, diabetes.target
@@ -33,4 +33,4 @@ print(f'Mean Squared Error: {mse}')
 
 # Save the model
 import joblib
-joblib.dump(model, 'model.pkl')
+joblib.dump(model, '/mnt/datalake/instructor/diabetes_model.pkl')
