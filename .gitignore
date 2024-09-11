@@ -36,3 +36,4 @@ vignettes/*.pdf
 rsconnect/
 
 .DS_Store
+0 - Admin/terraform/.terraform/
