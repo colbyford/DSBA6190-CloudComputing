@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    pv.kubernetes.io/provisioned-by: blob.csi.azure.com
+  name: pv-datalake-class-blob
+spec:
+  capacity:
+    storage: 500Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain  # If set as "Delete" container would be removed after pvc deletion
+  storageClassName: azureblob-fuse-premium
+  mountOptions:
+    # - -o allow_other
+    - --use-adls=true
+    - --file-cache-timeout-in-seconds=120
+  csi:
+    driver: blob.csi.azure.com
+    # volumeid has to be unique for every identical storage blob container in the cluster
+    # character `#`and `/` are reserved for internal use and cannot be used in volumehandle
+    volumeHandle: datalake_class
+    volumeAttributes:
+      containerName: datalake
+    nodeStageSecretRef:
+      name: datalake-class-secret
+      namespace: default
