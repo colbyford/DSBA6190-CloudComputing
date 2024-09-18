@@ -37,3 +37,4 @@ rsconnect/
 
 .DS_Store
 0 - Admin/terraform/.terraform/
+3 - Distributed Computing/containerization/docker_example/kubectl.exe
