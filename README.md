@@ -1,7 +1,7 @@
 # Cloud Computing for Data Analysis
 ## DSBA 6190-U90
 
-### Fall 2024 CRN: [23148](https://selfservice.uncc.edu/pls/BANPROD/bwlkfcwl.P_FacClaList?crn=23148)
+### Fall 2025 CRN: `11491`
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 
 
