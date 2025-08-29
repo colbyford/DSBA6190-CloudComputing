@@ -11,9 +11,9 @@ groups=(
     "epsilon"
     "zeta"
     "eta"
-    "theta"
-    "iota"
-    "kappa"
+    # "theta"
+    # "iota"
+    # "kappa"
     )
 
 ## Loop through groups and create resource groups
