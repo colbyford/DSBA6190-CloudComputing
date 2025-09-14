@@ -24,4 +24,4 @@ spec:
   volumes:
     - name: datalake
       persistentVolumeClaim:
-        claimName: pvc-datalake-class-blob
+        claimName: azure-blob-pvc

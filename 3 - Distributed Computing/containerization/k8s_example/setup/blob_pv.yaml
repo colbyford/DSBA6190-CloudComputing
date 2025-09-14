@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: azure-blob-pv
+spec:
+  capacity:
+    storage: 100Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: azureblob-nfs
+  csi:
+    driver: blob.csi.azure.com
+    volumeHandle: stodsba6190class
+    volumeAttributes:
+      containerName: data
+      storageAccount: stodsba6190class
+    nodeStageSecretRef:
+      name: azure-blob-secret
+      namespace: default

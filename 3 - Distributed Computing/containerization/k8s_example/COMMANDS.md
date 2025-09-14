@@ -26,7 +26,7 @@ docker exec -it sklearn_01 /bin/bash
 az login
 
 ## Set the default Azure Subscription (if not prompted)
-# az account set --subscription e9bc187a-e9a1-46be-822e-e955a2563601
+# az account set --subscription b92ea061-7db2-40ee-ad4a-cee871832b64
 
 ## Log into the Azure Container Registry
 az acr login --name <REGISTRY_NAME>
@@ -58,4 +58,18 @@ kubectl apply -f <POD YAML FILE>
 ```bash
 kubectl exec -it <pod_name> -- /bin/bash
 # kubectl exec -it instructor-test-01 -- /bin/bash
+```
+
+## Run your Python Script in the Pod
+
+```bash
+python <script_name>.py
+# python train.py
+```
+
+## Delete the Pod
+
+```bash
+kubectl delete pod <pod_name>
+# kubectl delete pod instructor-test-01
 ```
