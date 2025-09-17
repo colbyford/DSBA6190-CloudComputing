@@ -12,8 +12,8 @@ docker build -t <IMAGE_NAME> .
 ## Run Docker Container (Locally to test)
 
 ```bash
-docker run -it --name <CONTAINER_NAME> -dt <IMAGE_NAME> <COMMAND> 
-# docker run -it --name sklearn_01 -dt instructor_sklearn /bin/bash
+docker run -it --name <CONTAINER_NAME> <IMAGE_NAME> <COMMAND> 
+# docker run -it --name sklearn_01 instructor_sklearn /bin/bash
 
 ## Execute a command in the container (in this case, an interactive shell)
 docker exec -it sklearn_01 /bin/bash
@@ -43,7 +43,7 @@ docker push <REGISTRY_NAME>.azurecr.io/<IMAGE_NAME>
 
 ## Get the Azure Kubernetes Service credential for kubectl to use
 ```bash
-az aks get-credentials --resource-group rg-dsba6190-class-dev-eastus-001 --name kub-dsba6190-class-dev-eastus-001 --overwrite-existing
+az aks get-credentials --resource-group rg-dsba6190-class-eastus-001 --name kub-dsba6190-class-dev-eastus-001 --overwrite-existing
 ```
 
 ## Apply Kubernetes Pod
