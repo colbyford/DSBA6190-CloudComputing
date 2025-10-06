@@ -18,6 +18,7 @@ docker run -it --name <CONTAINER_NAME> <IMAGE_NAME> <COMMAND>
 ```
 
 ## Execute a command in the container (in this case, an interactive shell)
+```bash
 docker exec -it sklearn_01 /bin/bash
 ```
 
