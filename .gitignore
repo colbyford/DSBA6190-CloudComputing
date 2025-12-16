@@ -39,3 +39,6 @@ rsconnect/
 0 - Admin/terraform/.terraform/
 3 - Distributed Computing/containerization/docker_example/kubectl.exe
 2 - Data Platform/~$DataPlatform.pptx
+0 - Admin/terraform/.terraform.lock.hcl
+0 - Admin/terraform/terraform.tfstate
+0 - Admin/terraform/terraform.tfstate.backup
